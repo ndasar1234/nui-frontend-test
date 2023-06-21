@@ -1,13 +1,12 @@
 import React from "react";
 import Chart from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
-import "./widget.css";
 
 Chart.register();
 
 function Statistic({ ...props }) {
   const data = {
-    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli"],
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
       {
         label: "2023",

@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import { sidebarToggle } from "./../../utils/toggler.js";
-import BottomNavbar from "../BottomNavbar/Index";
 
-function AuthLayout({ ...props }) {
+function AuthLayout() {
   const isDesktop = () => document.body.clientWidth > 768;
-  const [sidebarStatus, setSidebarStatus] = useState("");
+  const [sidebarStatus, setSidebarStatus] = useState(false);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -17,6 +16,7 @@ function AuthLayout({ ...props }) {
 
   return (
     <div className="adminLayout">
+      
       {/* Sidebar */}
       <Sidebar
         toggle={sidebarToggle}
@@ -27,9 +27,6 @@ function AuthLayout({ ...props }) {
       <div className="mainWrapper">
         <Outlet context={[sidebarToggle]} />
       </div>
-
-      {/* Bottom Navigation */}
-      <BottomNavbar />
     </div>
   );
 }

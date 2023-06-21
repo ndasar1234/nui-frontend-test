@@ -1,15 +1,14 @@
-import { faCloud, faSignOut } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloud } from "@fortawesome/free-solid-svg-icons";
 import React, { useRef, useState } from "react";
 import initMenus from "../../data/menus.js";
 import "./sidebar.css";
 import SidebarLogo from "./SidebarLogo.jsx";
 import SidebarSearch from "./SidebarSearch.jsx";
 import MenuList from "./MenuList.jsx";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Sidebar({ ...props }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [menus, setMenus] = useState(initMenus);
   const [scButton, setScButton] = useState(false);
   const search = useRef("");
@@ -34,9 +33,10 @@ function Sidebar({ ...props }) {
     setScButton(false);
   };
 
-  const logout = () => {
-    navigate("/auth/login");
-  };
+  //TODO change
+  // const logout = () => {
+  //   navigate("/");
+  // };
 
   return (
     <>
@@ -61,9 +61,9 @@ function Sidebar({ ...props }) {
           <MenuList menus={menus} toggle={props.toggle} />
 
           {/* Profile */}
-          <div className="pt-2 border-t border-gray-300">
+          {/* <div className="pt-2 border-t border-gray-300">
             <div className="py-2 px-4">
-              {/* Logout Button */}
+              Logout Button
               <button
                 className="py-2 px-4 border border-blue-500 bg-blue-600 w-full rounded-full text-gray-200 hover:bg-blue-600 hover:border-blue-600 justify-end text-sm"
                 onClick={() => logout()}
@@ -71,7 +71,7 @@ function Sidebar({ ...props }) {
                 <FontAwesomeIcon icon={faSignOut}></FontAwesomeIcon> Logout
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </aside>
 

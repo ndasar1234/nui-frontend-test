@@ -9,7 +9,7 @@ function SidebarSearch({ scButton, handleChange, clearSearch, search }) {
         <input
           type="text"
           name=""
-          placeholder="Cari Menu"
+          placeholder="Sidebar Search"
           id=""
           onChange={handleChange}
           ref={search}

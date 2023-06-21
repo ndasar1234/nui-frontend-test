@@ -2,9 +2,8 @@ import { faPage4, faWindows } from "@fortawesome/free-brands-svg-icons";
 import {
   faTachometer,
   faTable,
-  // faLock,
-  // faNoteSticky,
-  faNotdef
+  faNotdef,
+  faDatabase
 } from "@fortawesome/free-solid-svg-icons";
 
 const initMenu = [
@@ -13,9 +12,9 @@ const initMenu = [
     path: "/",
     icon: faTachometer,
   },
-  {
-    label: 'Label1'
-  },
+  // {
+  //   label: 'Label1'
+  // },
   {
     label: "Blank",
     path: "/blank",
@@ -27,33 +26,28 @@ const initMenu = [
     icon: faNotdef,
   },
   
-  {
-    label: 'Label2'
-  },
+  // {
+  //   label: 'Label2'
+  // },
   {
     label: "Form",
     path: "/form",
     icon: faWindows,
   },
   {
-    label: "Tabel",
+    label: "Table",
     path: "/table",
     icon: faTable,
   },
-
   {
-    label: 'Label3'
-  },
+    label: "Data Creation",
+    path: "/datacreation",
+    icon: faDatabase,
+  }
+
   // {
-  //   label: "Login",
-  //   path: "/auth/login",
-  //   icon: faLock,
+  //   label: 'Label3'
   // },
-  // {
-  //   label: "Register",
-  //   path: "/auth/register",
-  //   icon: faNoteSticky,
-  // },
-];
+]
 
 export default initMenu

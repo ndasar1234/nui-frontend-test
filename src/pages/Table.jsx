@@ -27,7 +27,7 @@ function Table() {
     },
     {
       key: "action",
-      label: "Aksi",
+      label: "Action",
     },
   ];
 
@@ -35,67 +35,23 @@ function Table() {
   const data = [
     {
       id: 1,
-      name: "Indah Sari Devi",
-      email: "mamahdedeh34@gmail.com",
-      username: "indahsdev01",
+      name: "Nikhil Dasari",
+      email: "email@gmail.com",
+      username: "nikhil.dasari",
       roles: [{ name: "Admin" }, { name: "Writer" }],
     },
     {
       id: 2,
-      name: "Mahindra Putra",
-      email: "maheend@gmail.com",
-      username: "maheeend01",
+      name: "Example2",
+      email: "ex2@gmail.com",
+      username: "example2",
       roles: [{ name: "Editor" }],
     },
     {
       id: 3,
-      name: "Ujang Ilman",
-      email: "ujangil03@gmail.com",
-      username: "uujang44",
-      roles: [{ name: "Writer" }],
-    },
-
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-    {
-      id: 1,
-      name: "Indah Sari Devi",
-      email: "mamahdedeh34@gmail.com",
-      username: "indahsdev01",
-      roles: [{ name: "Admin" }, { name: "Writer" }],
-    },
-    {
-      id: 2,
-      name: "Mahindra Putra",
-      email: "maheend@gmail.com",
-      username: "maheeend01",
-      roles: [{ name: "Editor" }],
-    },
-    {
-      id: 3,
-      name: "Ujang Ilman",
-      email: "ujangil03@gmail.com",
-      username: "uujang44",
-      roles: [{ name: "Writer" }],
-    },
-
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
+      name: "Example3",
+      email: "ex3@gmail.com",
+      username: "example3",
       roles: [{ name: "Writer" }],
     },
   ];
