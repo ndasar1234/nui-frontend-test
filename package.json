@@ -1,6 +1,7 @@
 {
   "name": "nui-frontend",
   "version": "0.1.0",
+  "homepage": "https://ndasar1234.github.io/nui-frontend-test",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -25,6 +26,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +53,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
