@@ -8,6 +8,7 @@ import Blank from "./pages/Blank";
 import NotFound from "./pages/NotFound";
 import Form from "./pages/Form";
 import DataCreation from "./pages/DataCreation";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/blank" element={<Blank />}></Route>
         <Route path="/404" element={<NotFound />}></Route>
         <Route path="/form" element={<Form />}></Route>
-        <Route path="/profile" element={<Blank />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
         <Route path="/datacreation" element={<DataCreation />}></Route>
       </Route>
     </Routes>

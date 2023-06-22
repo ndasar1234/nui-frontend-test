@@ -8,13 +8,21 @@ import {
 
 const initMenu = [
   {
+    label: 'Production Pages'
+  },
+  {
     label: "Dashboard",
     path: "/",
     icon: faTachometer,
   },
-  // {
-  //   label: 'Label1'
-  // },
+  {
+    label: "Data Creation",
+    path: "/datacreation",
+    icon: faDatabase,
+  },
+  {
+    label: 'Example Pages'
+  },
   {
     label: "Blank",
     path: "/blank",
@@ -26,9 +34,7 @@ const initMenu = [
     icon: faNotdef,
   },
   
-  // {
-  //   label: 'Label2'
-  // },
+
   {
     label: "Form",
     path: "/form",
@@ -39,15 +45,6 @@ const initMenu = [
     path: "/table",
     icon: faTable,
   },
-  {
-    label: "Data Creation",
-    path: "/datacreation",
-    icon: faDatabase,
-  }
-
-  // {
-  //   label: 'Label3'
-  // },
 ]
 
 export default initMenu

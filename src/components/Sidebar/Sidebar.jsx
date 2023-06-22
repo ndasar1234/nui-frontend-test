@@ -33,11 +33,6 @@ function Sidebar({ ...props }) {
     setScButton(false);
   };
 
-  //TODO change
-  // const logout = () => {
-  //   navigate("/");
-  // };
-
   return (
     <>
       <aside
@@ -59,19 +54,6 @@ function Sidebar({ ...props }) {
 
           {/* Menu */}
           <MenuList menus={menus} toggle={props.toggle} />
-
-          {/* Profile */}
-          {/* <div className="pt-2 border-t border-gray-300">
-            <div className="py-2 px-4">
-              Logout Button
-              <button
-                className="py-2 px-4 border border-blue-500 bg-blue-600 w-full rounded-full text-gray-200 hover:bg-blue-600 hover:border-blue-600 justify-end text-sm"
-                onClick={() => logout()}
-              >
-                <FontAwesomeIcon icon={faSignOut}></FontAwesomeIcon> Logout
-              </button>
-            </div>
-          </div> */}
         </div>
       </aside>
 

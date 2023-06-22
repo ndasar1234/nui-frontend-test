@@ -1,6 +1,6 @@
 import React from "react";
 import StatisticWidget from "../components/Widget/Statistic.jsx";
-import AchievementWidget from "../components/Widget/Achievment.jsx";
+import AchievementWidget from "../components/Widget/Achievement.jsx";
 import ScrolledCard from "../components/Widget/ScrolledCard.jsx";
 import { useOutletContext } from "react-router-dom";
 import Navbar from "../components/Navbar/Index";
@@ -63,15 +63,9 @@ function Dashboard() {
   return (
     <>
       <main className="h-full">
-        {/* Welcome Header */}
-        {/* <DashboardHeader
-          toggle={sidebarToggle}
-          avatar={avatar}
-          user={{ name: "Nikhil Dasari" }}
-        /> */}
         <Navbar toggle={sidebarToggle} />
 
-        {/* Laba */}
+        {/* Profit */}
         <div className="px-2 mx-auto mainCard">
           <div className="w-full overflow-hidden text-slate-700 md:grid gap-4 grid md:grid-cols-6">
             <StatisticWidget className="col-span-4 col-start-1 bg-white" />
@@ -79,7 +73,7 @@ function Dashboard() {
           </div>
         </div>
 
-        {/* OS Kredit */}
+        {/* Cards */}
         <div className="px-2 mx-auto mainCard">
           <h1 className="text-slate-500 pb-3 text-base md:text-lg">
             Example Cards
