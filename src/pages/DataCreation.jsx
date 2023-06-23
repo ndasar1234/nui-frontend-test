@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar/Index";
-import { useOutletContext } from "react-router-dom";
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select, TextField } from "@mui/material";
@@ -28,11 +26,8 @@ function DataCreation() {
     console.log(state);
   };
 
-  const [sidebarToggle] = useOutletContext();
   return (
     <>
-      <main className="h-full">
-        <Navbar toggle={sidebarToggle} />
         {/* Main Content */}
         <div className="mainCard">
           <div className="border w-full border-gray-200 bg-white py-4 px-6 rounded-md">
@@ -88,7 +83,6 @@ function DataCreation() {
             </form>
           </div>
         </div>
-      </main>
     </>
   );
 }

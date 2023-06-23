@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar/Index";
-import { useOutletContext } from "react-router-dom";
 import UserTable from "./UserTable";
 
 function Table() {
-  const [sidebarToggle] = useOutletContext();
 
   const [loading] = useState(false);
 
@@ -57,9 +54,6 @@ function Table() {
   ];
   return (
     <>
-      <main className="h-full">
-        <Navbar toggle={sidebarToggle} />
-
         {/* Main Content */}
         <div className="mainCard">
           <div className="border w-full border-gray-200 bg-white py-4 px-6 rounded-md">
@@ -71,7 +65,6 @@ function Table() {
             />
           </div>
         </div>
-      </main>
     </>
   );
 }

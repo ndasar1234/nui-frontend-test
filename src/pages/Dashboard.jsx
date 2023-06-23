@@ -2,8 +2,6 @@ import React from "react";
 import StatisticWidget from "../components/Widget/Statistic.jsx";
 import AchievementWidget from "../components/Widget/Achievement.jsx";
 import ScrolledCard from "../components/Widget/ScrolledCard.jsx";
-import { useOutletContext } from "react-router-dom";
-import Navbar from "../components/Navbar/Index";
 
 function Dashboard() {
   // const avatar = ""
@@ -58,13 +56,9 @@ function Dashboard() {
     },
   ];
 
-  const [sidebarToggle] = useOutletContext();
 
   return (
     <>
-      <main className="h-full">
-        <Navbar toggle={sidebarToggle} />
-
         {/* Profit */}
         <div className="px-2 mx-auto mainCard">
           <div className="w-full overflow-hidden text-slate-700 md:grid gap-4 grid md:grid-cols-6">
@@ -87,7 +81,6 @@ function Dashboard() {
 
           <div className="lg:w-full w-[1024px] overflow-hidden flex flex-row justify-between text-slate-700 gap-2 lg:max-h-screen overflow-x-auto whitespace-nowrap"></div>
         </div>
-      </main>
     </>
   );
 }

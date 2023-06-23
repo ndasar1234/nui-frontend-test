@@ -15,7 +15,7 @@ function Index({ toggle }) {
   const avatar =
     "";
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
   const [modalPosition, setModalPosition] = useState({ top: '10%', right: '10%' });
   const avatarButtonRef = useRef(null);
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -29,23 +29,24 @@ function Index({ toggle }) {
 
   const handleAvatarClick = () => {
     updateModalPosition();
-    setIsModalOpen(true);
+    setModalOpen(true);
   };
 
   const handleLoginClick = () => {
     setLoggedIn(true);
-    setIsModalOpen(false);
+    setModalOpen(false);
     // navigate('/auth/salesforce');
   }
 
   const handleProfileClick = () => {
-    setIsModalOpen(false);
+    setModalOpen(false);
     navigate('/profile');
+    console.log(isLoggedIn);
   };
 
   const handleLogoutClick = () => {
-    setIsModalOpen(false);
     setLoggedIn(false);
+    setModalOpen(false);
   };
 
   useEffect(() => {
@@ -143,7 +144,7 @@ function Index({ toggle }) {
                     />
                     <Modal
                       isOpen={isModalOpen}
-                      onRequestClose={() => setIsModalOpen(false)}
+                      onRequestClose={() => setModalOpen(false)}
                       style={modalStyles}
                       contentLabel="Modal"
                     >
@@ -153,14 +154,14 @@ function Index({ toggle }) {
                             variant="text"
                             onClick={handleProfileClick}
                           >
-                            <Person style={{ color: 'rgba(0, 0, 0, 0.54)', marginRight: '20px' }}/>
+                            <Person style={{ color: 'rgba(0, 0, 0, 0.54)', marginRight: '10px' }}/>
                             <Typography variant='button' color="textSecondary">Profile</Typography>
                           </Button>
                           <Button
                             variant="text"
                             onClick={handleLogoutClick}
                           >
-                            <Logout style={{ color: 'rgba(0, 0, 0, 0.54)', marginRight: '20px' }}/>
+                            <Logout style={{ color: 'rgba(0, 0, 0, 0.54)', marginRight: '10px' }}/>
                             <Typography variant='button' color="textSecondary">Logout</Typography>
                           </Button>
                         </>
@@ -169,7 +170,7 @@ function Index({ toggle }) {
                         variant="text"
                         onClick={handleLoginClick}
                       >
-                        <Login style={{ color: 'rgba(0, 0, 0, 0.54)', marginRight: '20px' }}/>
+                        <Login style={{ color: 'rgba(0, 0, 0, 0.54)', marginRight: '10px' }}/>
                         <Typography variant='button' color="textSecondary">Login</Typography>
                       </Button>
                       )}
